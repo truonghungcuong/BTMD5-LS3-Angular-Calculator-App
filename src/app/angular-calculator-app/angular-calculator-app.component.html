@@ -1,0 +1,16 @@
+
+  <div class="container">
+    <input type="number" [(ngModel)]="first" class="form-input" >
+    <select [(ngModel)]="operator"  class="form-input" >
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="number" [(ngModel)]="second" class="form-input" >
+    <button class="form-input" (click)="calculator()">Submit</button>
+    <p>{{result}}</p>
+  </div>
+
+
+
